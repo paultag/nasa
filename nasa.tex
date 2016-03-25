@@ -1,0 +1,81 @@
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$]{$documentclass$}
+\usepackage[utf8]{inputenc}
+% \usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
+\usepackage[top=1.25in,left=1.25in,bottom=1in,right=1.25in]{geometry}
+\usepackage[absolute]{textpos}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{multicol}
+
+\usepackage{fontspec,xltxtra,xunicode}
+
+\usepackage{setspace}
+\doublespacing
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+$if(numbersections)$
+$else$
+\setcounter{secnumdepth}{0}
+$endif$
+
+\begin{document}
+\begin{textblock*}{2in}[0.3066,0.39](1.3in,1.2in)
+\includegraphics[keepaspectratio=true,height=0.5in]{../images/NASA.png}
+\end{textblock*}
+
+\begin{textblock*}{6.375in}(2.47in,1in)
+    \sffamily
+	\fontsize{49pt}{0}
+	\selectfont
+	\setmainfont{Helvetica Light}
+	Tech Brief
+\end{textblock*}
+
+\begin{textblock*}{6.375in}(0.9in,1.58in)
+    \sffamily
+	\fontsize{11pt}{0}
+	\noindent
+	\setmainfont{Helvetica Light}
+	\selectfont National\\
+    Aeronautics and\\
+	Space\\
+	Administration
+\end{textblock*}
+
+\begin{textblock*}{6.375in}(0.9in,2.17in)
+    \sffamily
+	\fontsize{14pt}{0}
+	\noindent
+	\setmainfont{Helvetica75-Bold}
+    $author$
+\end{textblock*}
+
+
+\begin{textblock*}{6.375in}(0.9in,2.35in)
+    \sffamily
+	\fontsize{12pt}{0}
+	\noindent
+	\setmainfont{Helvetica Light}
+\end{textblock*}
+
+\begin{tikzpicture}[remember picture,overlay]
+    \draw[line width=2pt] (current page.north west)+(0.9in,-2.6in) -- ($$(-0.9in,-2.6in)+(current page.north east)$$);
+\end{tikzpicture}
+
+\begin{textblock*}{6.375in}(0.9in,2.9in)
+	\noindent
+	\fontsize{14pt}{0}
+	\setmainfont{Helvetica75-Bold}
+	$title$
+\end{textblock*}
+
+\vspace*{1.8in}
+
+\begin{multicols}{2}
+$body$
+
+\end{multicols}
+\end{document}
