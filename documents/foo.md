@@ -1,6 +1,9 @@
-% Franzen asymmetrical 3 wolf moon
-% Hipster Squad Center
-
+---
+title: Franzen asymmetrical 3 wolf moon
+author:
+ name: Joe Snuffy
+ affiliation: Ames Research Center
+...
 
 Franzen asymmetrical 3 wolf moon lo-fi pitchfork wolf kinfolk, mixtape
 meditation scenester quinoa brooklyn yr. Tousled cornhole four loko etsy VHS
